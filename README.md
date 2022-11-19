@@ -16,5 +16,5 @@
 ### Creating an expiring link
 `POST http://localhost:8000/api/v1/image/<id>/get_download_link/`  
 `JSON {"exp": <seconds>}`
-### Admin
+## Admin
 `http://localhost:8000/admin/`
