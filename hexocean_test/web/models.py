@@ -6,7 +6,7 @@ from django.db import models
 # Create your models here.
 class UserTier(models.Model):
 
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=50, unique=True)
     thumbnail_sizes = ArrayField(models.IntegerField(), default=list)
     original_photo_access = models.BooleanField(default=False)
     expiring_link_access = models.BooleanField(default=False)
