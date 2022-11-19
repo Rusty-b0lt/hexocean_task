@@ -8,6 +8,7 @@
 - `python manage.py createsuperuser`  
 - `python manage.py createdefaultusertiers` - Custom script to create three default user tiers.  
 ## API
+API uses BasicAuthentication. I thought it's ok for a local project, so I didn't use OAuth.
 ### Uploading image
 `POST http://localhost:8000/api/v1/image/`  
 `Form-Data: {"file": <file>}`
