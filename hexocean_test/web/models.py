@@ -21,5 +21,5 @@ class User(AbstractUser):
 class Image(models.Model):
 
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='images')
-    file = models.ImageField(upload_to='images/', validators=[FileExtensionValidator(allowed_extensions=['jpg', 'png'])])
+    file = models.ImageField(upload_to='images/', validators=[FileExtensionValidator(allowed_extensions=['jpg', 'jpeg', 'png'])])
 
